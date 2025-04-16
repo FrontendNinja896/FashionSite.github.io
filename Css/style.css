@@ -15,8 +15,7 @@ header{
     left: 0;
     top: 0;
     width: 100%;
-    height: max-content;
-    border: 1px solid silver;
+    height: 10%;
     box-sizing: border-box;
 }
 .desktop h1, .mobile h1{
@@ -41,7 +40,7 @@ header{
 }
 .desktop nav{
     text-align: center;
-    margin-top: -30px;
+    margin-top: -40px;
 }
 img{
     float: right;
@@ -64,9 +63,8 @@ img{
     display: none;
 }
 main .firstblock{
-    width: 98%;
-    height: 520px;
-    border: 3px solid silver;
+    width: 100%;
+    height: 630px;
     margin-top: 40px;
 }
 main .firstblock p{
@@ -81,6 +79,7 @@ main .firstblock p:nth-child(2){
 }
 .firstblock ol{
     list-style-image: url("../img/ListElement.svg");
+    margin-top: 5%;
 }
 .firstblock ol li{
     font-size: 18px;
@@ -101,8 +100,9 @@ main .firstblock p:nth-child(2){
 .firstblock img{
     width: 20%;
     height: 10%;
-    margin-top: -28%;
+    margin-top: -25%;
     align-self: flex-end;
+    margin-right: 4%;
 }
 .text{
     display: flex;
@@ -120,19 +120,17 @@ main .firstblock p:nth-child(2){
 .secondblock{
     width:100%;
     height: max-content;
-    border: 2px solid silver;
     display: flex;
     flex-direction: row;
 }
-.secondblock img{
-    margin-top: 5%;
-}
 .secondblock .firstimage{
     width: 20%;
+    margin-top: 1%;
 }
 .secondblock .image1{
-    width: 30%;
-    margin-top: 2%;
+    width: 20%;
+    margin-top: 1%;
+    margin-left: 4%;
 }
 .secondblock ul{
     align-self: center;
@@ -154,7 +152,6 @@ main .firstblock p:nth-child(2){
     width:100%;
     height: max-content;
     background-color: #282829;
-    border: 2px solid silver;
 }
 .thirdblock .formblock{
     width: 70%;
@@ -198,7 +195,6 @@ footer{
     width:100%;
     height: 500px;
     background-color: #282829;
-    border: 2px solid silver;
 }
 footer hr{
     margin-top: 3%;
@@ -224,6 +220,7 @@ footer .firstflex p{
     text-transform: uppercase;
     color: #FFFFFF;
     font-size: 20px;
+    margin-left: 5%;
 }
 footer .images{
     margin: 20px;
@@ -245,6 +242,8 @@ footer .thirdflex{
     flex-direction: column;
     float: right;
     gap: 20px;
+    margin-right: 5%;
+    margin-top: -2%;
 }
 footer .thirdflex button{
     width:180px;
@@ -333,6 +332,28 @@ button:hover{
     }
     .secondblock{
         flex-direction: column;
+    }
+}
+@media screen and (min-width:320px) and (max-width:400px){
+    .firstblock{
+        min-height: 900px;
+    }
+    .firstblock img{
+        width:50%;
+        margin-top: 5%;
+    }
+    .secondblock{
+        height: 1200px;
+    }
+    .secondblock .firstimage{
+        margin-top: 50%;
+    }
+    .secondblock .firstimage{
+        width:50%;
+    }
+    .secondblock .image1{
+        width:50%;
+        margin-top: 12%;
     }
 }
 @keyframes stylebutton {
